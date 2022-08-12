@@ -3,6 +3,11 @@
 
 #include <assert.h>
 
+#ifndef _MSC_VER
+// Trust in the compiler to inline
+#define __forceinline inline
+#endif
+
 namespace atg_scs {
     class Matrix {
         public:
