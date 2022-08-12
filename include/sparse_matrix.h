@@ -1,13 +1,13 @@
 #ifndef ATG_SIMPLE_2D_CONSTRAINT_SOLVER_SPARSE_MATRIX_H
 #define ATG_SIMPLE_2D_CONSTRAINT_SOLVER_SPARSE_MATRIX_H
 
+#include "matrix.h"
+
 #include <assert.h>
 #include <stdint.h>
 #include <string.h>
 
 namespace atg_scs {
-    class Matrix;
-
     template <int T_Stride = 3, int T_Entries = 2>
     class SparseMatrix {
         public:
